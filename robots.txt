@@ -1,0 +1,87 @@
+# ==============================================================================
+# PERMISSIVE ROBOTS.TXT FOR AI AGENTS & SEARCH ENGINES (EXCLUDING APP & API)
+# ==============================================================================
+
+# Default rule for all crawlers and AI agents
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# Google Search & Gemini / AI Overviews
+User-agent: Googlebot
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# OpenAI (ChatGPT & GPTBot)
+User-agent: GPTBot
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# Microsoft Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# Other major AI / web scrapers
+User-agent: Amazonbot
+User-agent: ByteSpider
+User-agent: CCBot
+User-agent: Diffbot
+User-agent: FacebookBot
+Allow: /
+Disallow: /app/
+Disallow: /app
+Disallow: /api/
+Disallow: /api
+
+# Sitemap link
+Sitemap: https://cipher-send.com/sitemap.xml

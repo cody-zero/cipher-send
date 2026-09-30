@@ -1,0 +1,189 @@
+{
+  "name": "ciphersend-browser",
+  "readme": {
+    "file": "README.md",
+    "bytes": 2223
+  },
+  "sitemap": {
+    "file": "sitemap.xml",
+    "bytes": 800
+  },
+  "robots": {
+    "file": "robots.txt",
+    "bytes": 1525
+  },
+  "pages": {
+    "app": {
+      "html": "app.html",
+      "md": "app.md",
+      "css": "/assets/app-52d5179cfe797fa3.css",
+      "js": "/assets/app-3762db3b4a53401d.js",
+      "htmlBytes": 10245,
+      "mdBytes": 1960,
+      "cssBytes": 22433,
+      "jsBytes": 30771,
+      "htmlRawBytes": 10148,
+      "cssRawBytes": 37058,
+      "jsRawBytes": 34345
+    },
+    "faq": {
+      "html": "faq.html",
+      "md": "faq.md",
+      "css": "/assets/faq-93918db3db34edc3.css",
+      "js": "/assets/faq-d7bb633569cb6a3b.js",
+      "htmlBytes": 30598,
+      "mdBytes": 7369,
+      "cssBytes": 23668,
+      "jsBytes": 1718,
+      "htmlRawBytes": 18237,
+      "cssRawBytes": 47108,
+      "jsRawBytes": 4555
+    },
+    "how-it-works": {
+      "html": "how-it-works.html",
+      "md": "how-it-works.md",
+      "css": "/assets/how-it-works-f3398581ffe3917a.css",
+      "js": "/assets/how-it-works-d7bb633569cb6a3b.js",
+      "htmlBytes": 17075,
+      "mdBytes": 6248,
+      "cssBytes": 23718,
+      "jsBytes": 1718,
+      "htmlRawBytes": 13796,
+      "cssRawBytes": 46511,
+      "jsRawBytes": 4555
+    },
+    "index": {
+      "html": "index.html",
+      "md": "index.md",
+      "css": "/assets/index-8564deb885d294cc.css",
+      "js": "/assets/index-5c3062067129e082.js",
+      "htmlBytes": 15927,
+      "mdBytes": 4348,
+      "cssBytes": 24667,
+      "jsBytes": 2286,
+      "htmlRawBytes": 12276,
+      "cssRawBytes": 49377,
+      "jsRawBytes": 6255
+    },
+    "privacy": {
+      "html": "privacy.html",
+      "md": "privacy.md",
+      "css": "/assets/privacy-93918db3db34edc3.css",
+      "js": "/assets/privacy-d7bb633569cb6a3b.js",
+      "htmlBytes": 14119,
+      "mdBytes": 6110,
+      "cssBytes": 23668,
+      "jsBytes": 1718,
+      "htmlRawBytes": 13397,
+      "cssRawBytes": 45298,
+      "jsRawBytes": 4555
+    },
+    "privacy-policy": {
+      "html": "privacy-policy.html",
+      "md": "privacy-policy.md",
+      "css": "/assets/privacy-policy-73b3e4a5b53f9720.css",
+      "js": "/assets/privacy-policy-9d1d362813712113.js",
+      "htmlBytes": 13450,
+      "mdBytes": 6095,
+      "cssBytes": 23452,
+      "jsBytes": 738,
+      "htmlRawBytes": 11483,
+      "cssRawBytes": 41547,
+      "jsRawBytes": 1905
+    },
+    "security": {
+      "html": "security.html",
+      "md": "security.md",
+      "css": "/assets/security-93918db3db34edc3.css",
+      "js": "/assets/security-d7bb633569cb6a3b.js",
+      "htmlBytes": 17365,
+      "mdBytes": 9072,
+      "cssBytes": 23668,
+      "jsBytes": 1718,
+      "htmlRawBytes": 16737,
+      "cssRawBytes": 45298,
+      "jsRawBytes": 4555
+    },
+    "terms-of-use": {
+      "html": "terms-of-use.html",
+      "md": "terms-of-use.md",
+      "css": "/assets/terms-of-use-73b3e4a5b53f9720.css",
+      "js": "/assets/terms-of-use-9d1d362813712113.js",
+      "htmlBytes": 11132,
+      "mdBytes": 4147,
+      "cssBytes": 23452,
+      "jsBytes": 738,
+      "htmlRawBytes": 8677,
+      "cssRawBytes": 41547,
+      "jsRawBytes": 1905
+    },
+    "use-cases": {
+      "html": "use-cases.html",
+      "md": "use-cases.md",
+      "css": "/assets/use-cases-9325aecdca3f4f29.css",
+      "js": "/assets/use-cases-d7bb633569cb6a3b.js",
+      "htmlBytes": 20016,
+      "mdBytes": 5564,
+      "cssBytes": 23718,
+      "jsBytes": 1718,
+      "htmlRawBytes": 12202,
+      "cssRawBytes": 47728,
+      "jsRawBytes": 4555
+    },
+    "why-ciphersend": {
+      "html": "why-ciphersend.html",
+      "md": "why-ciphersend.md",
+      "css": "/assets/why-ciphersend-f3398581ffe3917a.css",
+      "js": "/assets/why-ciphersend-d7bb633569cb6a3b.js",
+      "htmlBytes": 20242,
+      "mdBytes": 9693,
+      "cssBytes": 23718,
+      "jsBytes": 1718,
+      "htmlRawBytes": 18737,
+      "cssRawBytes": 46511,
+      "jsRawBytes": 4555
+    }
+  },
+  "static": [
+    {
+      "file": "/static/logo.png",
+      "bytes": 15577
+    },
+    {
+      "file": "/static/favicon.ico",
+      "bytes": 15086
+    },
+    {
+      "file": "/static/favicon.svg",
+      "bytes": 86773
+    },
+    {
+      "file": "/static/favicon-96x96.png",
+      "bytes": 2472
+    },
+    {
+      "file": "/static/apple-touch-icon.png",
+      "bytes": 5198
+    },
+    {
+      "file": "/static/site.webmanifest",
+      "bytes": 469
+    },
+    {
+      "file": "/static/web-app-manifest-192x192.png",
+      "bytes": 5754
+    },
+    {
+      "file": "/static/web-app-manifest-512x512.png",
+      "bytes": 23134
+    },
+    {
+      "file": "/static/sas-words.json",
+      "bytes": 21311
+    },
+    {
+      "file": "/static/gtag.js",
+      "bytes": 613
+    }
+  ]
+}

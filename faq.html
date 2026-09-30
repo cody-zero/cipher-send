@@ -1,0 +1,303 @@
+<!doctype html> <html lang="en"> <head> <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEW09H6XM3"></script> <script defer src="/static/gtag.js"></script> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>CipherSend FAQ | Safety, Privacy &amp; Sessions Answered</title> <meta name="description" content="CipherSend FAQ: is it safe and truly end-to-end encrypted, what data is collected, how sessions work and expire, and what to do if something looks off."> <meta name="robots" content="index, follow"> <link rel="canonical" href="/faq"> <meta property="og:title" content="CipherSend FAQ | Safety, Privacy &amp; Sessions Answered"> <meta property="og:description" content="CipherSend FAQ: is it safe and truly end-to-end encrypted, what data is collected, how sessions work and expire, and what to do if something looks off."> <meta property="og:type" content="article"> <meta property="og:url" content="/faq"> <meta property="og:image" content="/static/logo.png"> <meta property="og:site_name" content="CipherSend"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="CipherSend FAQ | Safety, Privacy &amp; Sessions Answered"> <meta name="twitter:description" content="CipherSend FAQ: is it safe and truly end-to-end encrypted, what data is collected, how sessions work and expire, and what to do if something looks off."> <meta name="twitter:image" content="/static/logo.png"> <link rel="icon" href="/static/favicon.ico" sizes="48x48"> <link rel="icon" href="/static/favicon.svg" type="image/svg+xml"> <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png"> <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" sizes="180x180"> <link rel="manifest" href="/static/site.webmanifest"> <link rel="stylesheet" href="/assets/faq-93918db3db34edc3.css" crossorigin>   <link rel="alternate" type="text/markdown" href="/faq.md">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "/#website",
+      "url": "/",
+      "name": "CipherSend",
+      "description": "Send a password, API key, private key, or TOTP seed straight to one person's browser — end-to-end encrypted, no account, and gone the moment it's used.",
+      "publisher": {
+        "@id": "/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "/#organization",
+      "url": "/",
+      "name": "CipherSend",
+      "logo": "/static/logo.png",
+      "description": "Send a password, API key, private key, or TOTP seed straight to one person's browser — end-to-end encrypted, no account, and gone the moment it's used."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "/faq#webpage",
+      "url": "/faq",
+      "name": "CipherSend FAQ | Safety, Privacy & Sessions Answered",
+      "description": "CipherSend FAQ: is it safe and truly end-to-end encrypted, what data is collected, how sessions work and expire, and what to do if something looks off.",
+      "isPartOf": {
+        "@id": "/#website"
+      },
+      "breadcrumb": {
+        "@id": "/faq#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "/faq#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "CipherSend",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "/faq"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is CipherSend?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CipherSend lets one person (the Host) hand a short-lived secret — a password, private key, API token, or TOTP seed — directly to one other person (the Guest), browser-to-browser, end-to-end encrypted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to create an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. CipherSend has no accounts, no login, and collects no personal information to use it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I share with it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's designed for short-lived secrets like passwords, private keys, API tokens, or TOTP seeds — not general files."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is it for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone who needs to hand off a sensitive credential to exactly one other person, one time, without leaving a copy of it sitting in email, chat, or a shared document afterward."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start a session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click \"Create a secure link.\" A one-time link and QR code are generated immediately — no setup required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the other person join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By opening the link or scanning the QR code, then clicking the \"Join secure session\" button. The page doesn't connect automatically on its own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I have to click \"Join secure session\" instead of it just connecting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That one click confirms a real person opened the link, rather than something like an automated chat-app link preview accidentally taking the one available spot in the session before you get there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can more than two people join the same session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A session accepts only the Host and one Guest; a third connection attempt is rejected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the warning about QR scanner apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CipherSend recommends scanning the QR code with your phone's built-in camera app only — third-party QR scanner apps are known to send scanned links to their own servers first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know I'm actually connected to the right person, and not someone else?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After connecting, both browsers display a short comparison phrase (a handful of plain words). Read it to each other over your call, chat, or in person — if it matches on both screens, you're connected to the right person."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the phrase doesn't match?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Don't approve. A mismatch means the connection may not be trustworthy — stop and start a new session instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do both people need to approve before the secret can be sent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each person approves independently on their own side. Approval on one side never happens automatically because the other side approved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after I copy the secret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CipherSend makes a best-effort attempt to automatically clear your clipboard after about 30 seconds. This isn't guaranteed to work on every browser, so a \"Clear clipboard now\" button is always available if you want to be sure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a session stay open?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By default, a session closes after about 10 minutes of inactivity, and every session has a hard limit of about 30 minutes total, regardless of activity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I got disconnected mid-session — what happens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both sides restart the verification step from scratch: fresh keys, a fresh comparison phrase, and a fresh approval. Nothing from before the disconnect is assumed to still be trustworthy — you'll be prompted to re-verify."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to click \"Join\" again if I get disconnected and reconnect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. That join click is only required once, the first time you open the link. Reconnections after that (for example, if your phone's browser tab was put to sleep and restored) don't ask again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is CipherSend end-to-end encrypted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The secret is encrypted in the sender's browser and only decrypted in the recipient's browser, using industry-standard encryption computed entirely client-side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can CipherSend's server read my secret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The server only relays encrypted data between the two browsers — it's built to never interpret or make sense of what's inside."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the server store my secret anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The secret, the encryption keys, and the comparison phrase are never stored on the server, even temporarily."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if CipherSend's server were somehow compromised?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The server was never trusted with your secret in the first place, so it has nothing to hand over — it doesn't hold the keys, the secret, or the comparison phrase used to verify the connection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CipherSend protect me if my own device is compromised?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. If a device involved is already compromised, no sharing tool can fully protect what happens on it. This is an explicitly acknowledged limitation, not something CipherSend claims to solve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use CipherSend for a private, off-the-record conversation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Here is what anyone else could see. An eavesdropper sees only encrypted data, because everything is end-to-end encrypted (E2EE) in your browsers. The server sees nothing useful: it only relays that data, it stores nothing, and it never holds your keys or your words. An attacker sitting in the middle can't slip in unnoticed, because you and the other person compare a short phrase first, and a mismatch tells you the connection isn't safe. Once the session ends, no history is left behind on our side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CipherSend collect personal information?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There are no accounts, and no personally identifying information is required or collected to use it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my IP address or other details logged?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Raw IP addresses and other identifying details are never logged directly. Any operational data used to prevent abuse is processed in a way that doesn't retain it in a directly readable form, and only briefly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my secret, key, or comparison phrase ever stored in cookies or browser storage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. None of these values are ever written to cookies, local storage, session storage, or the browser's address bar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data does CipherSend keep at all?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only the minimum needed to operate the service — for example, a short-lived record that a session exists and when it expires, and temporary counters used to prevent abuse. None of this includes the content of what you send."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is CipherSend a general file-sharing tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It's built specifically for short-lived text secrets, not general file transfer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CipherSend keep a history of past sessions or messages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There's no message history and no way to resend something from a closed session."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I ignore the comparison phrase and just approve anyway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The comparison phrase only protects you if you actually check it. Approving without comparing removes the one safeguard designed to confirm you're connected to the right person."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the page say \"Open in your browser\" instead of loading normally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This appears if your current browser or app can't run the security checks CipherSend depends on (for example, some in-app browsers inside chat apps). Opening the link in your device's regular browser usually resolves it."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head> <body> <div id="nav"> <nav class="main-nav" role="navigation" aria-label="Main navigation"> <a class="main-nav__logo" href="/"> <img src="/static/logo.png" alt="CipherSend" width="104" height="15"> </a> <ul class="main-nav__links"> <li><a href="/">Home</a></li> <li><a href="/how-it-works">How It Works</a></li> <li><a href="/use-cases">Use Cases</a></li> <li><a href="/why-ciphersend">Why CipherSend</a></li> <li><a href="/security">Security</a></li> <li><a href="/privacy">Privacy</a></li> <li><a href="/faq" aria-current="page">FAQ</a></li> </ul> <a class="app-btn main-nav__cta" href="/app">Create a secure link</a> <button class="main-nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">☰</button> </nav> <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="Navigation menu"> <button class="nav-overlay__close" aria-label="Close menu">✕</button> <ul class="nav-overlay__links"> <li><a href="/">Home</a></li> <li><a href="/how-it-works">How It Works</a></li> <li><a href="/use-cases">Use Cases</a></li> <li><a href="/why-ciphersend">Why CipherSend</a></li> <li><a href="/security">Security</a></li> <li><a href="/privacy">Privacy</a></li> <li><a href="/faq" aria-current="page">FAQ</a></li> <li><a href="/app" class="app-btn nav-overlay__cta">Create a secure link</a></li> </ul> </div> </div> <main class="article-layout"> <div class="article-body"> <div class="page-intro"> <h1>Frequently asked questions</h1> <p>If you're wondering whether CipherSend is safe to use, what happens to your data, or what to do if something looks off, here are direct answers.</p> </div> <div class="summary"> <p><b>In short:</b> CipherSend is free, end-to-end encrypted, requires no account, and stores nothing — no secret, no keys, no message history. A session holds exactly two people for one exchange, verifies the connection with a comparison phrase, and expires on its own.</p> </div> <section class="mb-8"> <h3>General</h3> <div class="qa-block mt-4"> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What is CipherSend?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>CipherSend lets one person (the Host) hand a short-lived secret — a password, private key, API token, or TOTP seed — directly to one other person (the Guest), browser-to-browser, end-to-end encrypted.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Do I need to create an account?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. CipherSend has no accounts, no login, and collects no personal information to use it.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What can I share with it?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>It's designed for short-lived secrets like passwords, private keys, API tokens, or TOTP seeds — not general files.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Who is it for?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Anyone who needs to hand off a sensitive credential to exactly one other person, one time, without leaving a copy of it sitting in email, chat, or a shared document afterward.</p></div> </div> </div> </section> <hr class="section-separator"> <section class="mb-8"> <h3>Using CipherSend</h3> <div class="qa-block mt-4"> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">How do I start a session?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Click "Create a secure link." A one-time link and QR code are generated immediately — no setup required.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">How does the other person join?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>By opening the link or scanning the QR code, then clicking the "Join secure session" button. The page doesn't connect automatically on its own.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Why do I have to click "Join secure session" instead of it just connecting?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>That one click confirms a real person opened the link, rather than something like an automated chat-app link preview accidentally taking the one available spot in the session before you get there.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Can more than two people join the same session?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. A session accepts only the Host and one Guest; a third connection attempt is rejected.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What's the warning about QR scanner apps?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>CipherSend recommends scanning the QR code with your phone's built-in camera app only — third-party QR scanner apps are known to send scanned links to their own servers first.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">How do I know I'm actually connected to the right person, and not someone else?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>After connecting, both browsers display a short comparison phrase (a handful of plain words). Read it to each other over your call, chat, or in person — if it matches on both screens, you're connected to the right person.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What if the phrase doesn't match?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Don't approve. A mismatch means the connection may not be trustworthy — stop and start a new session instead.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Do both people need to approve before the secret can be sent?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Yes. Each person approves independently on their own side. Approval on one side never happens automatically because the other side approved.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What happens after I copy the secret?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>CipherSend makes a best-effort attempt to automatically clear your clipboard after about 30 seconds. This isn't guaranteed to work on every browser, so a "Clear clipboard now" button is always available if you want to be sure.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">How long does a session stay open?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>By default, a session closes after about 10 minutes of inactivity, and every session has a hard limit of about 30 minutes total, regardless of activity.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">I got disconnected mid-session — what happens?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Both sides restart the verification step from scratch: fresh keys, a fresh comparison phrase, and a fresh approval. Nothing from before the disconnect is assumed to still be trustworthy — you'll be prompted to re-verify.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Do I have to click "Join" again if I get disconnected and reconnect?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. That join click is only required once, the first time you open the link. Reconnections after that (for example, if your phone's browser tab was put to sleep and restored) don't ask again.</p></div> </div> </div> </section> <hr class="section-separator"> <section class="mb-8" id="security-and-trust"> <h3>Security &amp; Trust</h3> <div class="qa-block mt-4"> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Is CipherSend end-to-end encrypted?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Yes. The secret is encrypted in the sender's browser and only decrypted in the recipient's browser, using industry-standard encryption computed entirely client-side.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Can CipherSend's server read my secret?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. The server only relays encrypted data between the two browsers — it's built to never interpret or make sense of what's inside.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Does the server store my secret anywhere?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. The secret, the encryption keys, and the comparison phrase are never stored on the server, even temporarily.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What if CipherSend's server were somehow compromised?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>The server was never trusted with your secret in the first place, so it has nothing to hand over — it doesn't hold the keys, the secret, or the comparison phrase used to verify the connection.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Does CipherSend protect me if my own device is compromised?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. If a device involved is already compromised, no sharing tool can fully protect what happens on it. This is an explicitly acknowledged limitation, not something CipherSend claims to solve.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Can I use CipherSend for a private, off-the-record conversation?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Yes. Here is what anyone else could see. An eavesdropper sees only encrypted data, because everything is end-to-end encrypted (E2EE) in your browsers. The server sees nothing useful: it only relays that data, it stores nothing, and it never holds your keys or your words. An attacker sitting in the middle can't slip in unnoticed, because you and the other person compare a short phrase first, and a mismatch tells you the connection isn't safe. Once the session ends, no history is left behind on our side.</p></div> </div> </div> </section> <hr class="section-separator"> <section class="mb-8" id="privacy-and-data"> <h3>Privacy &amp; Data</h3> <div class="qa-block mt-4"> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Does CipherSend collect personal information?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. There are no accounts, and no personally identifying information is required or collected to use it.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Are my IP address or other details logged?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Raw IP addresses and other identifying details are never logged directly. Any operational data used to prevent abuse is processed in a way that doesn't retain it in a directly readable form, and only briefly.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Is my secret, key, or comparison phrase ever stored in cookies or browser storage?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. None of these values are ever written to cookies, local storage, session storage, or the browser's address bar.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What data does CipherSend keep at all?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>Only the minimum needed to operate the service — for example, a short-lived record that a session exists and when it expires, and temporary counters used to prevent abuse. None of this includes the content of what you send.</p></div> </div> </div> </section> <hr class="section-separator"> <section class="mb-8"> <h3>Limitations — Good to Know</h3> <div class="qa-block mt-4"> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Is CipherSend a general file-sharing tool?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. It's built specifically for short-lived text secrets, not general file transfer.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Does CipherSend keep a history of past sessions or messages?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>No. There's no message history and no way to resend something from a closed session.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">What if I ignore the comparison phrase and just approve anyway?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>The comparison phrase only protects you if you actually check it. Approving without comparing removes the one safeguard designed to confirm you're connected to the right person.</p></div> </div> <div class="qa-item"> <button class="qa-item__trigger" aria-expanded="false">Why does the page say "Open in your browser" instead of loading normally?<span class="qa-item__chevron">▼</span></button> <div class="qa-item__answer"><p>This appears if your current browser or app can't run the security checks CipherSend depends on (for example, some in-app browsers inside chat apps). Opening the link in your device's regular browser usually resolves it.</p></div> </div> </div> </section> <div class="cta-section"> <div class="button-holder button-holder--column"> <a href="/security" class="page-teleport page-teleport--block">Read the security details</a> <a href="/privacy" class="page-teleport page-teleport--block">Read the privacy details</a> </div> </div> </div> </main> <div id="footer"> <footer class="main-footer"> <div class="main-footer__inner"> <ul class="main-footer__links"> <li><a href="/how-it-works">How It Works</a></li> <li><a href="/use-cases">Use Cases</a></li> <li><a href="/why-ciphersend">Why CipherSend</a></li> <li><a href="/security">Security</a></li> <li><a href="/privacy">Privacy</a></li> <li><a href="/faq">FAQ</a></li> <li><a href="/privacy-policy">Privacy Policy</a></li> <li><a href="/terms-of-use">Terms of Use</a></li> </ul> <p class="main-footer__copy">© CipherSend. All rights reserved.</p> </div> </footer> </div> <script type="module" src="/assets/faq-d7bb633569cb6a3b.js"></script> </body> </html> 

@@ -1,0 +1,65 @@
+<!doctype html> <html lang="en"> <head> <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEW09H6XM3"></script> <script defer src="/static/gtag.js"></script> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>CipherSend | Share Secrets Securely, End-to-End Encrypted</title> <meta name="description" content="CipherSend lets you share a password, API key, private key, or TOTP seed securely: end-to-end encrypted, no account, single-use, and gone once it's read."> <meta name="robots" content="noindex, nofollow"> <link rel="canonical" href="/app"> <meta property="og:title" content="CipherSend | Share Secrets Securely, End-to-End Encrypted"> <meta property="og:description" content="CipherSend lets you share a password, API key, private key, or TOTP seed securely: end-to-end encrypted, no account, single-use, and gone once it's read."> <meta property="og:type" content="website"> <meta property="og:url" content="/app"> <meta property="og:image" content="/static/logo.png"> <meta property="og:site_name" content="CipherSend"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="CipherSend | Share Secrets Securely, End-to-End Encrypted"> <meta name="twitter:description" content="CipherSend lets you share a password, API key, private key, or TOTP seed securely: end-to-end encrypted, no account, single-use, and gone once it's read."> <meta name="twitter:image" content="/static/logo.png"> <meta name="theme-color" content="#0a2342"> <link rel="icon" href="/static/favicon.ico" sizes="48x48"> <link rel="icon" href="/static/favicon.svg" type="image/svg+xml"> <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png"> <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" sizes="180x180"> <link rel="manifest" href="/static/site.webmanifest"> <link rel="stylesheet" href="/assets/app-52d5179cfe797fa3.css" crossorigin>   <link rel="alternate" type="text/markdown" href="/app.md">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "/#website",
+      "url": "/",
+      "name": "CipherSend",
+      "description": "Send a password, API key, private key, or TOTP seed straight to one person's browser — end-to-end encrypted, no account, and gone the moment it's used.",
+      "publisher": {
+        "@id": "/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "/#organization",
+      "url": "/",
+      "name": "CipherSend",
+      "logo": "/static/logo.png",
+      "description": "Send a password, API key, private key, or TOTP seed straight to one person's browser — end-to-end encrypted, no account, and gone the moment it's used."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "/app#webpage",
+      "url": "/app",
+      "name": "CipherSend | Share Secrets Securely, End-to-End Encrypted",
+      "description": "CipherSend lets you share a password, API key, private key, or TOTP seed securely: end-to-end encrypted, no account, single-use, and gone once it's read.",
+      "isPartOf": {
+        "@id": "/#website"
+      },
+      "breadcrumb": {
+        "@id": "/app#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "/app#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "CipherSend",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "App",
+          "item": "/app"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head> <body> <div id="app-step-share" class="app-step-layout is-hidden"> <div class="focus-box"> <div class="focus-box__logo"> <img src="/static/logo.png" alt="CipherSend"> </div> <div class="focus-box__title">Share</div> <div class="focus-box__content"> <p class="app-share-intro">Send this link or QR code to the person you're sharing with.</p> <div class="qr-placeholder" id="qr-container"></div> <div class="channel-url" id="channel-url"></div> <div class="status" id="share-status">Connecting...</div> <div class="focus-box__countdown"> <div class="focus-box__countdown-bar" id="share-countdown"></div> </div> <div class="callout callout--warn mt-6"> <p>Scan with your phone's built-in camera app only — third-party QR scanner apps are known to transmit scanned links to their own servers.</p> </div> </div> </div> <p class="text-center mt-4"><a href="/" class="page-teleport">Back to Home</a></p> </div> <div id="app-step-join" class="app-step-layout is-hidden"> <div class="focus-box"> <div class="focus-box__logo"> <img src="/static/logo.png" alt="CipherSend"> </div> <div class="focus-box__title">Join</div> <div class="focus-box__content"> <p>The person who invited you is expecting you. Confirming you're here with a click keeps automated link previews from silently taking the session before you arrive.</p> <div class="focus-box__actions mt-6"> <button class="btn btn--primary btn--lg" id="join-btn" type="button">Join secure session</button> </div> <div class="status is-hidden" id="join-status"> Connecting to secure session... </div> <div class="focus-box__countdown" aria-hidden="true"> <div class="focus-box__countdown-bar" id="join-countdown"></div> </div> </div> </div> <p class="text-center mt-4"><a href="/" class="page-teleport">Back to Home</a></p> </div> <div id="app-step-verify" class="app-step-layout is-hidden"> <div class="focus-box"> <div class="focus-box__logo"> <img src="/static/logo.png" alt="CipherSend"> </div> <div class="focus-box__title">Verify</div> <div class="focus-box__content"> <div class="security-phrase" id="sas-phrase">------</div> <p>Read this phrase to each other over your call, chat, or in person. If it matches on both screens, click Approve.</p> <div class="callout mt-4"> <p>This confirms you're connected to the right person, not an imposter.</p> </div> <div class="focus-box__actions"> <button class="btn btn--primary btn--lg" id="approve-btn" disabled>Approve</button> <div class="status is-hidden" id="approve-status">Waiting for peer approval...</div> </div> <div class="focus-box__countdown" aria-hidden="true"> <div class="focus-box__countdown-bar" id="verify-countdown"></div> </div> </div> </div> <p class="text-center mt-4"><a href="/" class="page-teleport">Back to Home</a></p> </div> <div id="app-step-chat" class="app-chat-layout is-hidden"> <div class="chat__header"> <div class="chat__header-left"> <img src="/static/logo.png" alt="CipherSend"> </div> <div class="chat__menu-anchor"> <button class="chat__menu-btn" id="chat-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="chat-menu">☰</button> <div class="chat__menu" id="chat-menu" role="menu"> <a href="/" role="menuitem">Home</a> <a href="/how-it-works" role="menuitem">How It Works</a> <a href="/why-ciphersend" role="menuitem">Why CipherSend</a> <a href="/use-cases" role="menuitem">Use Cases</a> <a href="/security" role="menuitem">Security</a> <a href="/privacy" role="menuitem">Privacy</a> <a href="/faq" role="menuitem">FAQ</a> </div> </div> </div> <div class="chat__history" id="chat-history" role="log" aria-live="polite"></div> <div class="chat__input-bar" id="chat-input-bar"> <div class="chat__validity" aria-hidden="true"> <div class="chat__validity-bar" id="chat-validity-bar"></div> </div> <textarea id="chat-input" placeholder="Type your secret... (Ctrl + Enter to send)" aria-label="Type your secret (Ctrl + Enter to send)" rows="1" spellcheck="false" autocomplete="off" autocorrect="off" translate="no" data-lpignore="true" maxlength="5000"></textarea> <div class="chat__peer-left is-hidden" id="peer-left-message" role="status" aria-live="polite">Peer disconnected — this session will end shortly.</div> <div class="chat__input-actions"> <span class="chat__counter" id="chat-msg-counter" aria-live="off">0 / 5000</span> <div class="chat__clear-wrap"> <button class="btn btn--ghost btn--icon" id="clear-clipboard-btn" title="Clipboard delete" aria-label="Clipboard delete" aria-pressed="false"> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5.5 2.5h5a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z"/>
+              <path d="M3 5.5h10"/>
+              <path d="M6.5 8v3"/>
+              <path d="M9.5 8v3"/>
+            </svg> </button> <span class="chat__tip" id="chat-copy-tip" role="status" hidden>Content copied</span> <span class="chat__clear-countdown" id="clear-countdown" aria-hidden="true"> <span class="chat__clear-countdown-bar" id="clear-countdown-bar"></span> </span> </div> <button class="btn btn--primary btn--icon" id="send-btn" title="Send" aria-label="Send message"> <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M1.5 1.5l13 6.5-13 6.5 2-6.5-2-6.5zm2 2l7 4.5-7 4.5.8-2.5h4.7v1.5h-6l1.2-3.5-1.2-3.5h6v1.5h-4.7l-.8-2.5z"/>
+          </svg> </button> </div> </div> </div> <div id="fallback-panel" class="app-step-layout is-hidden"> <div class="focus-box"> <div class="focus-box__logo"> <img src="/static/logo.png" alt="CipherSend"> </div> <div class="focus-box__title">Open in your browser</div> <div class="focus-box__content"> <p>Your current browser or app can't run the security checks CipherSend depends on.</p> <div class="focus-box__actions mt-6"> <button class="btn btn--secondary" id="copy-link-btn">Copy link</button> </div> <p class="text-center mt-6"><a href="/" class="page-teleport">Back to Home</a></p> </div> </div> </div> <div id="session-ended-panel" class="app-step-layout is-hidden"> <div class="focus-box"> <div class="focus-box__logo"> <img src="/static/logo.png" alt="CipherSend"> </div> <div class="focus-box__title">Session ended</div> <div class="focus-box__content"> <p>This session has expired or been closed.</p> <div class="focus-box__actions mt-6"> <a href="/app" class="btn btn--primary">Create a new secure link</a> </div> </div> </div> <p class="text-center mt-4"><a href="/" class="page-teleport">Back to Home</a></p> </div> <script type="module" src="/assets/app-3762db3b4a53401d.js"></script> </body> </html> 
